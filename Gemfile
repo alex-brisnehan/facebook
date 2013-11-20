@@ -6,7 +6,7 @@ gem 'rails', '3.1.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 # comment
 gem 'sqlite3'
-
+gem 'rdoc'
 #Edited by Alex Brisnehan
 
 # Gems used only for assets and not required
