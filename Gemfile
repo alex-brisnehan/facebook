@@ -7,7 +7,7 @@ gem 'rails', '3.1.0'
 # comment
 gem 'sqlite3'
 
-#Edited by Alex Brisnehan
+#Edited by Alex Brisnehan, Robert Watson
 
 # Gems used only for assets and not required
 # in production environments by default.
