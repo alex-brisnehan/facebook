@@ -1,4 +1,15 @@
 Facebook::Application.routes.draw do
+
+  get "user/index"
+
+  match ':controller(/:action(/:id))(.:format)'
+  root :to => 'sessions#login'
+  match "signup", :to => "users#new"
+  match "login", :to => "sessions#login"
+  match "logout", :to => "sessions#logout"
+  match "home", :to => "sessions#home"
+  match "profile", :to => "sessions#profile"
+  match "setting", :to => "sessions#setting"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -54,5 +65,5 @@ Facebook::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  # match ':controller(/:action(/:id))(.:format)'
 end
